@@ -1,4 +1,10 @@
 class Evaluate:
+ """This class validates and evaluates postfix expressions.
+Attributes:
+top: An integer which denotes the index of the element at the top of the stack currently.
+size_of_stack: An integer which represents the size of stack.
+stack: A List which acts as a Stack.
+"""
  def __init__(self, size):
   self.top = -1
   self.size_of_stack = size
