@@ -1,29 +1,22 @@
 class Evaluate:
-"""This class validates and evaluates postfix expressions.
-Attributes:
-top: An integer which denotes the index of the element at the top of the stack currently.
-size_of_stack: An integer which represents the size of stack.
-stack: A List which acts as a Stack.
-"""
-def __init__(self, size):
- self.top = -1
- self.size_of_stack = size
- self.stack = []
+ def __init__(self, size):
+  self.top = -1
+  self.size_of_stack = size
+  self.stack = []
 
-def isEmpty(self):
-if self.top == -1:
- return True
-else:
- return False
+ def isEmpty(self):
+  if self.top == -1:
+   return True
+  else:
+   return False
 
-def pop(self):
-# Write your code here
-if not self.isEmpty():
- self.stack.pop()
+ def pop(self):
+  if not self.isEmpty():
+   self.stack.pop()
 
-def push(self, operand):
-if self.top != self.size_of_stack - 1:
- self.stack.append(operand)
+ def push(self, operand):
+  if self.top != self.size_of_stack - 1:
+   self.stack.append(operand)
 
 def validate_postfix_expression(self, expression):
  x = 0
