@@ -6,19 +6,19 @@ size_of_stack: An integer which represents the size of stack.
 stack: A List which acts as a Stack.
 """
  def __init__(self, size):
-  self.top = -1
-  self.size_of_stack = size
-  self.stack = []
+   self.top = -1
+   self.size_of_stack = size
+   self.stack = []
 
  def isEmpty(self):
-  if self.top == -1:
-   return True
-  else:
-   return False
+   if self.top == -1:
+      return True
+   else:
+      return False
 
  def pop(self):
-  if not self.isEmpty():
-   self.stack.pop()
+   if not self.isEmpty():
+     self.stack.pop()
 
  def push(self, operand):
   if self.top != self.size_of_stack - 1:
